@@ -43,11 +43,17 @@ if(4>2){
 	console.log( "Four is greater than two" );
 }
 
-/*6 LOGIC - Control flow
-&& - and
-|| - or
-! - not
+/*6 LOGIC - Control flow, structure that evaluates an argument to be true or false
+else if
 */
+if(11<9){
+	console.log("The system is down.");
+}else if(5<3){
+	console.log("Everything you know is wrong.");
+}else{
+	alert("All is right with the world.");
+}
+
 
 //7 FUNCTION - Performs a particular task. Executes when called.
 	var w = 20;
