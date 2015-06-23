@@ -1,19 +1,387 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
+	<title> Javascript 2 </title>
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+	<script src="js/brain.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+		<script>
 
-<title> Javascript </title>
+		$(document).ready(function(){
 
-<script>
-	alert("Embedded alert");
-</script>	
+			//selecting element by ID
+			//$("#square1").fadeOut(4000);
+			//selecting element by class
+			$(".hello").html("Hi from jQuery");
+			//selecting element by tag name
 
+			$(".hello").fadeIn(function(){
+				$(".hello").delay(2000).slideUp();
+			});
+
+			$("#balls1").mouseover(function(){
+				$("#balls1").fadeOut();
+					$("#balls1").fadeIn();	
+						$("#balls1").slideUp();
+			});	
+
+			$("#balls2").mouseover(function(){
+				$("#balls2").fadeOut();
+					$("#balls2").fadeIn();	
+						$("#balls2").slideUp();
+			});	
+
+			$("#balls3").mouseover(function(){
+				$("#balls3").fadeOut();
+					$("#balls3").fadeIn();	
+						$("#balls3").slideUp();
+			});	
+
+			$("#balls4").mouseover(function(){
+				$("#balls4").fadeOut();
+					$("#balls4").fadeIn();	
+						$("#balls4").slideUp();
+			});	
+
+			$("#balls5").mouseover(function(){
+				$("#balls5").fadeOut();
+					$("#balls5").fadeIn();	
+						$("#balls5").slideUp();
+			});	
+
+			$("#balls6").mouseover(function(){
+				$("#balls6").fadeOut();
+					$("#balls6").fadeIn();	
+						$("#balls6").slideUp();
+			});	
+
+			$("#balls7").mouseover(function(){
+				$("#balls7").fadeOut();
+					$("#balls7").fadeIn();	
+						$("#balls7").slideUp();
+			});	
+
+			$("#balls8").mouseover(function(){
+				$("#balls8").fadeOut();
+					$("#balls8").fadeIn();	
+						$("#balls8").slideUp();
+			});	
+
+			$("#balls9").mouseover(function(){
+				$("#balls9").fadeOut();
+					$("#balls9").fadeIn();	
+						$("#balls9").slideUp();
+			});	
+
+			$("#balls10").mouseover(function(){
+				$("#balls10").fadeOut();
+					$("#balls10").fadeIn();	
+						$("#balls10").slideUp();
+			});
+
+			$("#balls11").mouseover(function(){
+				$("#balls11").fadeOut();
+					$("#balls11").fadeIn();	
+						$("#balls11").slideUp();
+			});	
+
+			$("#balls12").mouseover(function(){
+				$("#balls12").fadeOut();
+					$("#balls12").fadeIn();	
+						$("#balls12").slideUp();
+			});
+
+			$("#balls13").mouseover(function(){
+				$("#balls13").fadeOut();
+					$("#balls13").fadeIn();	
+						$("#balls13").slideUp();
+			});	
+
+			$("#balls14").click(function(){
+				$("#balls14").fadeOut();
+					$("#balls14").fadeIn();	
+						$("#balls14").slideUp();
+			});
+		
+
+		});	
+
+	</script>
+
+	<style>
+
+		.hello{
+			display: none;
+			font-size: 80pt;
+			text-align: center;
+			font-family: Cinzel Decorative;
+		}
+
+		#ball1{
+			width: 100px;
+			height: 100px;
+			border-radius: 60px;
+			background: red;
+		}
+
+		#ball2{
+			width: 100px;
+			height: 100px;
+			border-radius: 60px;
+			background: orange;
+		}
+
+		#ball3{
+			width: 100px;
+			height: 100px;
+			border-radius: 60px;
+			background: yellow;
+		}
+
+		#ball4{
+			width: 100px;
+			height: 100px;
+			border-radius: 60px;
+			background: green;
+		}
+
+		#ball5{
+			width: 100px;
+			height: 100px;
+			border-radius: 60px;
+			background: blue;
+		}
+
+		#ball6{
+			width: 100px;
+			height: 100px;
+			border-radius: 60px;
+			background: indigo;
+		}
+
+		#ball7{
+			width: 100px;
+			height: 100px;
+			border-radius: 60px;
+			background: violet;
+		}
+
+		#balls1{
+			position: absolute;
+			float: left;
+		}
+
+		#balls2{
+			position: absolute;
+			left: 108px;
+		}
+
+		#balls3{
+			position: absolute;
+			left: 208px;
+		}
+
+		#balls4{
+			position: absolute;
+			left: 308px;
+		}
+
+		#balls5{
+			position: absolute;
+			left: 408px;
+		}
+
+		#balls6{
+			position: absolute;
+			left: 508px;
+		}
+
+		#balls7{
+			position: absolute;
+			left: 608px;
+		}
+
+		#balls8{
+			position: absolute;
+			left: 708px;
+		}
+
+		#balls9{
+			position: absolute;
+			left: 808px;
+		}
+
+		#balls10{
+			position: absolute;
+			left: 908px;
+		}
+
+		#balls11{
+			position: absolute;
+			left: 1008px;
+		}
+
+		#balls12{
+			position: absolute;
+			left: 1108px;
+		}
+
+		#balls13{
+			position: absolute;
+			left: 1208px;
+		}
+
+		#balls14{
+			position: absolute;
+			left: 1308px;
+		}
+
+	</style>
 </head>
+
 <body>
 
-	<div id="monitor"></div>
-	<button onclick="feedKippo()">Feed Kippo Frogs</button>
-	<script src="js/sshomework5.js"></script>
+	<div class="hello"></div>
 
-</body>
+	<div id="balls1">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls2">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls3">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls4">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls5">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls6">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls7">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls8">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls9">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls10">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls11">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls12">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls13">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>
+
+	<div id="balls14">
+		<div id="ball1"></div>
+		<div id="ball2"></div>
+		<div id="ball3"></div>
+		<div id="ball4"></div>
+		<div id="ball5"></div>
+		<div id="ball6"></div>
+		<div id="ball7"></div>
+	</div>	
+
 </html>
